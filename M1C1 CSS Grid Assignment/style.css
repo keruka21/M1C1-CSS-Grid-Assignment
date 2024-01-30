@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+.gridOne, .gridTwo, .gridThree, .gridFour, .gridFive, .gridSix{
+    background-color: lightgrey;
+    margin-bottom: 2rem;
+    display:grid;
+}
+
+.gridOne{
+    grid-template-columns:1fr 1fr;
+}
+
+.gridTwo{
+    grid-template-columns:1fr 1fr 2fr;
+}
+
+    .gridTwo .red{
+        background-color: red;
+    }
+
+    .gridTwo .blue{
+        background-color: blue;
+    }
+
+    .gridTwo .yellow{
+        background-color: yellow;
+    }
+
+.gridThree{
+
+    grid-template-rows:1fr 3fr;
+    width:500px;
+    height:300px;
+}
+
+    .gridThree-text{
+        background-color: rgb(0, 149, 154);
+    }
+
+    .gridThree-image img{
+        background-color: rgb(255, 0, 123);
+        object-fit: cover;
+    }
+
+.gridFour{
+    width: 500px;
+    grid-template-rows: 1fr 1fr;
+    background-color: green;
+}
+    #gridFour-text-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+.gridFive{
+    width: 500px;
+    grid-template-rows: 1fr 1fr;
+}
+
+    .gridFive-wrapper-2{
+        display:grid;
+        grid-template-columns:1fr 2fr; 
+        justify-items: center;
+    }
+
+    .gridFive-wrapper-2 img{
+        object-fit: cover;
+    }  
+
+
+.gridSix{
+    background-color: lightgrey;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    font-family:'Honk', system-ui;
+    font-size: 1.8rem;
+}
